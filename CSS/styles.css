@@ -42,14 +42,14 @@ body {
 
   color: #ffffff;
 }
-
+/* Ajuste no texto no meio do codigo */
 .cb {
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 80%;
   width: 100%;
 }
-/* Texto base 64 */
+/* Texto base 64 e configurações */
 .base64 {
   display: flex;
   flex-direction: row;
@@ -88,7 +88,7 @@ body {
 
   color: white;
 }
-
+/* configruações do texto Cifra de Cesar */
 .cifraCesar {
   display: flex;
   flex-direction: row;
@@ -135,7 +135,7 @@ body {
   padding-top: 15px;
   color: white;
 }
-
+/* Parte pedindo para escrever no formulario */
 .click {
   display: flex;
   justify-content: center;
@@ -150,6 +150,7 @@ body {
   background: rgb(17, 50, 196);
 }
 /* Campo de codificação e descodificação */
+/* Formulario: */
 #formulario {
   display: flex;
   height: 300px;
@@ -178,7 +179,7 @@ body {
   font-size: 20px;
   margin-top: 80px;
 }
-
+/* Caixa mensagem */
 #mensagem {
   border-radius: 15px;
   width: 180px;
@@ -200,6 +201,7 @@ body {
   margin-top: 50px;
   width: 60px;
 }
+/* Div do botão radio */
 #radio {
   display: flex;
   flex-direction: column-reverse;
@@ -217,19 +219,21 @@ body {
 #mensagemDiv {
   padding: 10px;
 }
-
+/* Botão que muda de nome */
 #botao-codificar-decodificar {
   height: 200px;
   margin-top: 40px;
   border-radius: 20px;
   background-color: #373c3e;
 }
+/* Caixa Resultado */
 #resultado {
   margin-top: 40px;
   border-radius: 20px;
   padding: 5px;
   width: 300px;
 }
+/* Rodapé */
 footer {
   background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
@@ -237,6 +241,7 @@ footer {
   font-size: 12px;
   text-align: center;
 }
+/* Responsividade minima */
 @media (max-width: 1000px) {
   .cb {
     display: grid;
