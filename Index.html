@@ -65,30 +65,33 @@
     </div>
   </section>
 <!-- Formulario -->
-<form>
-<label for="message">Mensagem:</label>
-<textarea id="message"></textarea><br><br>
+<form id="formulario">
+  <div id="mensagemDiv">
+    <label for="mensagem">Mensagem:</label>
+    <textarea type="text" id="mensagem" name="mensagem" cols="30" rows="10"></textarea>
+  </div>
 
-<label for="cipher-type">Tipo de Cifra:</label>
-<select id="cipher-type">
-  <option value="none" selected> Selecionar</option>
-  <option value="caesar">Cifra de César</option>
-  <option value="base64">Base64</option>
-</select>
-<div id="caesar-options" style="display: none;">
-  <label for="shift">Incremento:</label>
-  <input type="number" id="shift" min="1" max="25" value="1"><br><br>
-</div>
+  <label for="cifra">Cifra:</label>
+  <select id="cifra" name="cifra">
+    <option value="cesar">Cifra de César</option>
+    <option value="base64">Base64</option>
+  </select>
 
-<label>Ação:</label>
-<input type="radio" name="action" value="encode" checked> Codificar
-<input type="radio" name="action" value="decode"> Decodificar<br><br>
+  <div id="incremento-cesar" style="display: none;">
+    <label for="incremento">Incremento:</label>
+    <input type="number" id="incremento" name="incremento" min="1" max="25">
+  </div>
+  <div id="radio">
+  <input type="radio" id="codificar" name="codificar-decodificar" value="codificar" checked>
+  <label for="codificar">Codificar</label>
+  <input type="radio" id="decodificar" name="codificar-decodificar" value="decodificar">
+  <label for="decodificar">Decodificar</label>
+  </div>
+  <button type="button" id="botao-codificar-decodificar">Codificar Mensagem</button>
 
-<button id="action-text">Codificar Mensagem!</button><br><br>
-
-<label for="result">Resultado:</label>
-<textarea id="result" readonly></textarea
-  </form>
+  <label for="resultado">Resultado:</label>
+  <textarea id="resultado" readonly></textarea>
+</form>
 </div>
   <!-- Rodapé -->
   <footer> Criado em ©2023, direitos reservados por Thiago Soares </footer>
