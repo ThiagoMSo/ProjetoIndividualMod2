@@ -1,2 +1,2 @@
-# ProjetoIndividualMod2
-Projeto Individual modulo 2
+# ProjetoIndividualModulo2-
+ Projeto Individual Modulo 2
