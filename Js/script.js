@@ -9,25 +9,27 @@ $(document).ready(function() {
   });
 
 // Função para dar o resultado em cifra de cesar
-function cifraDeCesar(mensagem, incremento) {
+  function cifraDeCesar(mensagem, incremento) {
+    incremento = Number(incremento);
     if (incremento > 25) {
-        incremento = incremento % 26;
+      incremento = incremento % 26;
     }
     var resultado = "";
     for (var i = 0; i < mensagem.length; i++) {
-        var c = mensagem[i].charCodeAt();
-        if (c >= 65 && c <= 90) {
-            resultado += String.fromCharCode(((c - 65 + incremento) % 26) + 65);
-        } else if (c >= 97 && c <= 122) {
-            resultado += String.fromCharCode(((c - 97 + incremento) % 26) + 97);
-        } else {
-            resultado += mensagem[i];
-        }
+      var c = mensagem[i].charCodeAt();
+      if (c >= 65 && c <= 90) {
+        resultado += String.fromCharCode(((c - 65 + incremento) % 26) + 65);
+      } else if (c >= 97 && c <= 122) {
+        resultado += String.fromCharCode(((c - 97 + incremento) % 26) + 97);
+      } else {
+        resultado += mensagem[i];
+      }
     }
     return resultado;
-}
-      // configuração de descodificação
+  }
+  // configuração de descodificação
   function decifraDeCesar(mensagem, incremento) {
+    incremento = Number(incremento);
     if (incremento > 25) {
       incremento = incremento % 26;
     }
