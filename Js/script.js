@@ -15,11 +15,11 @@ function cifraDeCesar(mensagem, incremento) {
     }
     var resultado = "";
     for (var i = 0; i < mensagem.length; i++) {
-        var c = mensagem.charCodeAt(i);
+        var c = mensagem[i].charCodeAt();
         if (c >= 65 && c <= 90) {
-            resultado += String.fromCharCode((c - 65 + incremento) % 26 + 65);
+            resultado += String.fromCharCode(((c - 65 + incremento) % 26) + 65);
         } else if (c >= 97 && c <= 122) {
-            resultado += String.fromCharCode((c - 97 + incremento) % 26 + 97);
+            resultado += String.fromCharCode(((c - 97 + incremento) % 26) + 97);
         } else {
             resultado += mensagem[i];
         }
@@ -32,12 +32,12 @@ function cifraDeCesar(mensagem, incremento) {
       incremento = incremento % 26;
     }
     var resultado = "";
-    for (var i = 0; i < mensagem.length; i++) {
-      var c = mensagem.charCodeAt(i);
+    for (let i = 0; i < mensagem.length; i++) {
+      let c = mensagem[i].charCodeAt();
       if (c >= 65 && c <= 90) {
-        resultado += String.fromCharCode((c - 90 - incremento) % 26 + 90);
+        resultado += String.fromCharCode(((c - 90 - incremento) % 26) + 90);
       } else if (c >= 97 && c <= 122) {
-        resultado += String.fromCharCode((c - 122 - incremento) % 26 + 122);
+        resultado += String.fromCharCode(((c - 122 - incremento) % 26) + 122);
       } else {
         resultado += mensagem[i];
       }
